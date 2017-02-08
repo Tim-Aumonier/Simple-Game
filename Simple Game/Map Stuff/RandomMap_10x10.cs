@@ -25,7 +25,7 @@ namespace Simple_Game.Map_Stuff
                     {
 
                         intRandomPercent = rnd.Next(0, 99);
-                        //33% ground, otherwise wall
+                        //40% ground, otherwise wall
                         if(intRandomPercent<40)
                         {
                             Map[i, j] = "Ground";
