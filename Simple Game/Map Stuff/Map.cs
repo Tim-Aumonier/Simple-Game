@@ -8,7 +8,7 @@ namespace Simple_Game
 {
     //This is the map class. It exists to store everything about the current game map, and tell everything else what the map layout is while the game is running.
     //The map is made of a 2x2 array of tiles
-    class Map
+    class Map : Map_Stuff.MapInterface
     {
         private MapTileInterface[,] mtiGameMap; //The map is made of a square array of individual tiles;
 
@@ -26,6 +26,11 @@ namespace Simple_Game
                     mtiGameMap[i, j] = new MapTile(Layout[i,j]);
                 }
             }
+        }
+
+        String Map_Stuff.MapInterface.GetSpicificTileType(int[] location)
+        {
+            return mtiGameMap[location[0], location[1]].GetType();
         }
     }
 }

@@ -38,6 +38,7 @@
             this.imglstGroundImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstGroundImages.ImageStream")));
             this.imglstGroundImages.TransparentColor = System.Drawing.Color.Transparent;
             this.imglstGroundImages.Images.SetKeyName(0, "Ground.png");
+            this.imglstGroundImages.Images.SetKeyName(1, "Wall.png");
             // 
             // frmGameWindow
             // 

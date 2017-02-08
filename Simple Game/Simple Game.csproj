@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Map Stuff\Map.cs" />
     <Compile Include="Map Stuff\MapBuilderInterface.cs" />
+    <Compile Include="Map Stuff\MapInterface.cs" />
     <Compile Include="Map Stuff\MapTile.cs" />
     <Compile Include="Map Stuff\MapTileInterface.cs" />
     <Compile Include="Map Stuff\RandomMap_10x10.cs" />
