@@ -11,6 +11,8 @@ namespace Simple_Game.Map_Stuff
     {
         private String[,] Map;
 
+        private int[] intStartingLocation; //The starting square. This should be ground and is where visibility spreads out from
+
         public RandomMap_10x10()
         {
             Map = new String[10, 10];
@@ -42,6 +44,10 @@ namespace Simple_Game.Map_Stuff
 
                 }
             }
+
+            //Set the starting location and make sure it's ground
+            intStartingLocation = new int[] { 5, 6 };
+            Map[intStartingLocation[0], intStartingLocation[1]] = "Ground";
         }
 
         //Interface methods
@@ -56,6 +62,10 @@ namespace Simple_Game.Map_Stuff
         int MapBuilderInterface.GetWidth()
         {
             return 10;
+        }
+        int[] MapBuilderInterface.GetStartingLocation()
+        {
+            return intStartingLocation;
         }
     }
 }

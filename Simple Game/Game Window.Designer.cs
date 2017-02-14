@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGameWindow));
-            this.imglstGroundImages = new System.Windows.Forms.ImageList(this.components);
+            this.imglstTileImages = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
-            // imglstGroundImages
+            // imglstTileImages
             // 
-            this.imglstGroundImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstGroundImages.ImageStream")));
-            this.imglstGroundImages.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglstGroundImages.Images.SetKeyName(0, "Ground.png");
-            this.imglstGroundImages.Images.SetKeyName(1, "Wall.png");
+            this.imglstTileImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTileImages.ImageStream")));
+            this.imglstTileImages.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTileImages.Images.SetKeyName(0, "Ground.png");
+            this.imglstTileImages.Images.SetKeyName(1, "Wall.png");
             // 
             // frmGameWindow
             // 
@@ -53,7 +53,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ImageList imglstGroundImages;
+        private System.Windows.Forms.ImageList imglstTileImages;
     }
 }
 
