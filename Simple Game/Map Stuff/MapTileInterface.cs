@@ -10,11 +10,10 @@ namespace Simple_Game
     //Needs to show we have get and set methods for each of its 3 variables.
     interface MapTileInterface
     {
-        void ChangePassability(bool passable);
         void ChangeType(String tile_type);
         void ChangeVissibility(bool vissable);
         bool IsPassable();
         bool IsVissable();
-        String GetType();
+        String GetTileType();
     }
 }

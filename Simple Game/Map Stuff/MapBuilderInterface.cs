@@ -13,5 +13,6 @@ namespace Simple_Game.Map_Stuff
         String[,] GetMapLayout();
         int GetWidth();
         int GetHeight();
+        int[] GetStartingLocation();
     }
 }
